@@ -7538,7 +7538,7 @@ export const Items: { [itemid: string]: ItemData } = {
 	moluganion: {
 		name: "Moluganion",
 		availability: {clover: 1},
-		spritenum: 747,
+		spritenum: 748,
 		onAfterSetStatusPriority: -1,
 		onAfterSetStatus(status, pokemon) {
 			if (pokemon.baseSpecies.baseSpecies === 'Noxilium') {
