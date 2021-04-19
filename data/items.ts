@@ -7944,6 +7944,21 @@ export const Items: { [itemid: string]: ItemData } = {
 		gen: 8,
 		isNonstandard: "Future",
 	},
+	ricosuavite: {
+		availability: {clover: 1},
+		name: "Ricosuavite",
+		spritenum: 577,
+		megaStone: "Ricosuave-Mega",
+		megaEvolves: "Ricosuave",
+		itemUser: ["Ricosuave"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1,
+		gen: 8,
+		isNonstandard: "Future",
+	},
 	/* Atlas Exclusive Items */
 	eviomite: {
 		availability: {atlas: 1},
