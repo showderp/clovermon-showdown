@@ -32388,7 +32388,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		requiredItem: "Reptrillite",
 	},
 	kuklanmega: {
-		num: 69272,
+		num: 69182,
 		name: "Kuklan-Mega",
 		baseSpecies: "Kuklan",
 		forme: "Mega",
