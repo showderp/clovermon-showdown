@@ -7541,13 +7541,17 @@ export const Items: { [itemid: string]: ItemData } = {
 		spritenum: 747,
 		onAfterSetStatusPriority: -1,
 		onAfterSetStatus(status, pokemon) {
-			pokemon.cureStatus();
-			pokemon.removeVolatile('confusion');
+			if (pokemon.baseSpecies.baseSpecies === 'Noxilium') {
+				pokemon.cureStatus();
+				pokemon.removeVolatile('confusion');
+			}
 		},
 		onUpdate(pokemon) {
 			if (pokemon.status || pokemon.volatiles['confusion']) {
-				pokemon.cureStatus();
-				pokemon.removeVolatile('confusion');
+				if (pokemon.baseSpecies.baseSpecies === 'Noxilium') {
+					pokemon.cureStatus();
+					pokemon.removeVolatile('confusion');
+				}
 			}
 		},
 		itemUser: ["Noxilium"],
