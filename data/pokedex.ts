@@ -31814,11 +31814,11 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		},
 		baseStats: {
 			hp: 92,
-			atk: 75,
-			def: 110,
-			spa: 143,
-			spd: 125,
-			spe: 90,
+			atk: 85,
+			def: 115,
+			spa: 163,
+			spd: 135,
+			spe: 45,
 		},
 		abilities: {
 			0: "Omniscience",
@@ -32139,7 +32139,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		forme: "Mega",
 		types: [
 			"Poison",
-			"Fighting",
+			"Electric",
 		],
 		genderRatio: {
 			M: 0.875,
@@ -32147,14 +32147,14 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		},
 		baseStats: {
 			hp: 92,
-			atk: 127,
-			def: 114,
+			atk: 187,
+			def: 97,
 			spa: 63,
-			spd: 114,
-			spe: 40,
+			spd: 81,
+			spe: 30,
 		},
 		abilities: {
-			0: "No Guard",
+			0: "Galvanize",
 		},
 		heightm: 1.2,
 		weightkg: 59.2,
@@ -32178,11 +32178,11 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		gender: "M",
 		baseStats: {
 			hp: 95,
-			atk: 125,
-			def: 115,
-			spa: 20,
-			spd: 110,
-			spe: 75,
+			atk: 130,
+			def: 120,
+			spa: 50,
+			spd: 100,
+			spe: 45,
 		},
 		abilities: {
 			0: "Blue Blood",
