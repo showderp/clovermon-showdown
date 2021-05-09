@@ -33132,9 +33132,9 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 			"Water 2",
 		],
 	},
-	beeraffee: {
+	beeraffe: {
 		num: 34054,
-		name: "Beeraffee",
+		name: "Beeraffe",
 		types: [
 			"Water",
 		],
