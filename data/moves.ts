@@ -22273,7 +22273,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-				chance: 100,
+				chance: 50,
 				onHit(target, source) {
 						const stats: BoostName[] = [];
 						for (const stat in target.boosts) {
