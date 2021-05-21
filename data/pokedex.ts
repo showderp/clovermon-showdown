@@ -36238,7 +36238,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		num: 34465,
 		name: "Shoe",
 		types: ["Normal"],
-		baseStats: {hp: 80, atk: 140, def: 60, spa: 95, spd: 60, spe: 101},
+		baseStats: {hp: 60, atk: 120, def: 75, spa: 60, spd: 70, spe: 111},
 		abilities: {0: "Striker", 1: "Normalize", H: "Water Absorb"},
 		heightm: 0.35,
 		weightkg: 0.25,
