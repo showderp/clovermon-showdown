@@ -36187,7 +36187,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		num: 34461,
 		name: "Tauran",
 		types: ["Bug", "Fighting"],
-		baseStats: {hp: 105, atk: 79, def: 72, spa: 95, spd: 81, spe: 113},
+		baseStats: {hp: 105, atk: 75, def: 70, spa: 95, spd: 80, spe: 110},
 		abilities: {0: "Pure Power", 1: "Vital Spirit", H: "Slush Rush"},
 		heightm: 0.87,
 		weightkg: 0.62,
