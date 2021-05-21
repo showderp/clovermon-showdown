@@ -2769,7 +2769,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		contestType: "Tough",
 	},
 	courtchange: {
-		availability: {atlas: 1},
+		availability: {clover: 1, atlas: 1},
 		num: 756,
 		accuracy: 100,
 		basePower: 0,
@@ -22273,7 +22273,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 100,
+			chance: 50,
 			onHit(target, source) {
 				const boosts: StatsExceptHPTable = {
 					atk: source.boosts.atk,
