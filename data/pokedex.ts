@@ -31413,7 +31413,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		name: "Erochre",
 		types: ["Rock", "Ground"],
 		gender: "N",
-		baseStats: {hp: 80, atk: 110, def: 130, spa: 55, spd: 50, spe: 45},
+		baseStats: {hp: 80, atk: 110, def: 130, spa: 65, spd: 50, spe: 45},
 		abilities: {0: "Weak Armor", 1: "Sand Rush", H: "Filter", S: "Water Compaction"},
 		heightm: 1.77,
 		weightkg: 120,
@@ -31653,7 +31653,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Dragon", "Monster"],
 		gen: 8,
 	},
-	fusjahl: {
+		fusjahl: {
 		num: 42090,
 		name: "Fusjahl",
 		types: ["???", "Ground"],
@@ -32009,8 +32009,8 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		baseStats: {
 			hp: 95,
 			atk: 135,
-			def: 115,
-			spa: 85,
+			def: 135,
+			spa: 65,
 			spd: 95,
 			spe: 75,
 		},
@@ -32430,12 +32430,12 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 			hp: 96,
 			atk: 69,
 			def: 115,
-			spa: 155,
-			spd: 110,
-			spe: 34,
+			spa: 145,
+			spd: 85,
+			spe: 69,
 		},
 		abilities: {
-			0: "Psychic Surge",
+			0: "Solid Rock",
 		},
 		heightm: 0.7,
 		weightkg: 75,
@@ -36034,7 +36034,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Bug", "Mineral"],
 	},
 	pupezerker: {
-		num: 34450,
+		num: 34446,
 		name: "Pupezerker",
 		types: ["Ghost", "Fairy"],
 		baseStats: {hp: 90, atk: 50, def: 110, spa: 50, spd: 110, spe: 80},
@@ -36047,7 +36047,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		formeOrder: ["Pupezerker", "Pupezerker-Unleashed"],
 	},
 	pupezerkerunleashed: {
-		num: 34450,
+		num: 34446,
 		name: "Pupezerker-Unleashed",
 		baseSpecies: "Pupezerker",
 		forme: "Unleashed",
@@ -36063,7 +36063,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 	},
 
 	spikmon: {
-		num: 34451,
+		num: 34192,
 		name: "Spikmon",
 		types: ["Steel", "Fire"],
 		baseStats: {hp: 46, atk: 75, def: 68, spa: 75, spd: 68, spe: 30},
@@ -36074,7 +36074,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Mineral"],
 	},
 	lavostra: {
-		num: 34452,
+		num: 34193,
 		name: "Lavostra",
 		types: ["Steel", "Fire"],
 		baseStats: {hp: 85, atk: 103, def: 95, spa: 103, spd: 95, spe: 48},
@@ -36087,7 +36087,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Mineral"],
 	},
 	yoshole: {
-		num: 34453,
+		num: 34190,
 		name: "Yoshole",
 		types: ["Dragon", "Fairy"],
 		baseStats: {hp: 55, atk: 60, def: 35, spa: 55, spd: 60, spe: 80},
@@ -36098,7 +36098,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Dragon", "Fairy"],
 	},
 	dracrime: {
-		num: 34454,
+		num: 34191,
 		name: "Dracrime",
 		types: ["Dragon", "Fairy"],
 		baseStats: {hp: 85, atk: 103, def: 48, spa: 95, spd: 95, spe: 103},
@@ -36112,7 +36112,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Dragon", "Fairy"],
 	},
 	gieugon: {
-		num: 34455,
+		num: 34232,
 		name: "Gieugon",
 		types: ["Psychic"],
 		baseStats: {hp: 70, atk: 33, def: 74, spa: 57, spd: 75, spe: 36},
@@ -36123,7 +36123,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Amorphous"],
 	},
 	giyagon: {
-		num: 34456,
+		num: 34233,
 		name: "Giyagon",
 		types: ["Psychic", "Dark"],
 		baseStats: {hp: 102, atk: 60, def: 100, spa: 105, spd: 115, spe: 63},
@@ -36137,7 +36137,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Amorphous"],
 	},
 	gnelf: {
-		num: 34457,
+		num: 3421,
 		name: "Gnelf",
 		types: ["Rock", "Fairy"],
 		baseStats: {hp: 40, atk: 60, def: 70, spa: 45, spd: 70, spe: 30},
@@ -36148,7 +36148,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Mineral", "Human-Like"],
 	},
 	gnolem: {
-		num: 34458,
+		num: 3422,
 		name: "Gnolem",
 		types: ["Rock", "Fairy"],
 		baseStats: {hp: 75, atk: 100, def: 100, spa: 80, spd: 100, spe: 52},
@@ -36161,7 +36161,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Mineral", "Human-Like"],
 	},
 	maamape: {
-		num: 34459,
+		num: 3493,
 		name: "Maamape",
 		types: ["Fighting", "Fairy"],
 		gender: "M",
@@ -36173,7 +36173,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Human-Like", "Fairy"],
 	},
 	karabojek: {
-		num: 34460,
+		num: 34234,
 		name: "Karabojek",
 		types: ["Bug", "Ice"],
 		baseStats: {hp: 30, atk: 70, def: 55, spa: 70, spd: 60, spe: 70},
@@ -36184,7 +36184,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Bug"],
 	},
 	tauran: {
-		num: 34461,
+		num: 34235,
 		name: "Tauran",
 		types: ["Bug", "Fighting"],
 		baseStats: {hp: 105, atk: 79, def: 72, spa: 95, spd: 81, spe: 113},
@@ -36197,7 +36197,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Bug"],
 	},
 	bunchamonk: {
-		   num: 34462,
+		   num: 34342,
 		   name: "Bunchamonk",
 		   types: ["Fighting"],
 		   baseStats: {hp: 35, atk: 75, def: 40, spa: 35, spd: 40, spe: 70},
@@ -36208,7 +36208,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		   eggGroups: ["Field"],
 	},
 	monvulcan: {
-		   num: 34463,
+		   num: 34343,
 		   name: "Monvulcan",
 		   types: ["Fighting", "Steel"],
 		   baseStats: {hp: 45, atk: 110, def: 65, spa: 60, spd: 65, spe: 75},
@@ -36221,7 +36221,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		   eggGroups: ["Field"],
 	},
 	monkazord: {
-		   num: 34464,
+		   num: 34344,
 		   name: "Monkazord",
 		   types: ["Fighting", "Steel"],
 		   baseStats: {hp: 55, atk: 145, def: 100, spa: 60, spd: 94, spe: 91},
@@ -36234,16 +36234,4 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		   color: "Red",
 		   eggGroups: ["Field", "Mineral"],
 	},
-	shoe: {
-		num: 34465,
-		name: "Shoe",
-		types: ["Normal"],
-		baseStats: {hp: 80, atk: 140, def: 60, spa: 95, spd: 60, spe: 101},
-		abilities: {0: "Striker", 1: "Normalize", H: "Water Absorb"},
-		heightm: 0.35,
-		weightkg: 0.25,
-		color: "Green",
-		eggGroups: ["Field", "Amorphous"],
-	},
-
 };

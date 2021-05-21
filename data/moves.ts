@@ -2769,7 +2769,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		contestType: "Tough",
 	},
 	courtchange: {
-		availability: {clover: 1, atlas: 1},
+		availability: {atlas: 1},
 		num: 756,
 		accuracy: 100,
 		basePower: 0,
@@ -22228,7 +22228,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		target: "normal",
 		type: "Fairy",
 	},
-	cloudbreaker: {/* this one's gonna need to be done by you, Sableye*/
+	cloudbreaker: {/*this one's gonna need to be done by you, Sableye*/
 		availability: {clover: 1},
 		accuracy: 100,
 		basePower: 90,
@@ -22253,14 +22253,14 @@ export const Moves: { [moveid: string]: MoveData } = {
 		flags: {protect: 1, mirror: 1},
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Steel') return 1;
-		},
-		secondary: {
-			chance: 30,
-			status: 'brn',
-		},
-		target: "normal",
-		type: "Steel",
-		contestType: "Cool",
+			},
+			secondary: {
+				chance: 30,
+				status: 'brn',
+			},
+			target: "normal",
+			type: "Steel",
+			contestType: "Cool",
 	},
 	memejr: {
 		availability: {clover: 1},
@@ -22268,39 +22268,28 @@ export const Moves: { [moveid: string]: MoveData } = {
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
-		name: "Meme Jr.",
+		name: "Meme Jr",
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 50,
-			onHit(target, source) {
-				const boosts: StatsExceptHPTable = {
-					atk: source.boosts.atk,
-					def: source.boosts.def,
-					spa: source.boosts.spa,
-					spd: source.boosts.spd,
-					spe: source.boosts.spe,
-				};
-				let minBoost = Infinity;
-				let minBoosts: StatNameExceptHP[] = [];
-				Object.entries(boosts).forEach(([statName, boostValue]) => {
-					if (boostValue < minBoost) {
-						minBoost = boostValue;
-						minBoosts = [statName as StatNameExceptHP];
-					} else if (boostValue === minBoost) {
-						minBoosts.push(statName as StatNameExceptHP);
-					}
-				});
-				if (minBoosts.length) {
-					const randomStat = this.sample(minBoosts);
-					const boost: SparseBoostsTable = {};
-					boost[randomStat] = 1;
-					this.boost(boost, source);
-				} else {
-					return false;
-				}
-			},
+				chance: 50,
+				onHit(target, source) {
+						const stats: BoostName[] = [];
+						for (const stat in target.boosts) {
+								if (source.boosts[stat as BoostName] < 6) {
+										stats.push(stat as BoostName);
+								}
+						}
+						if (stats.length) {
+								const randomStat = this.sample(stats);
+								const boost: SparseBoostsTable = {};
+								boost[randomStat] = 1;
+								this.boost(boost);
+						} else {
+								return false;
+						}
+				},
 		},
 		target: "normal",
 		type: "???",

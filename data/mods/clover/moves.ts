@@ -897,4 +897,8 @@ export const Moves: { [k: string]: ModdedMoveData } = {
 		inherit: true,
 		isNonstandard: "CAP",
 	},
+	courtchange: {
+		inherit: true,
+		isNonstandard: "CAP",
+	},
 };
