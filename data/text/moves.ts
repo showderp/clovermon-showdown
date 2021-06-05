@@ -7262,22 +7262,20 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Cloud Breaker",
 		shortDesc: "Clears the currently active weather.",
 	},
-	starseedblast: {
-		name: "Starseed Blast",
-		desc: "This move summons Leech Seed on the foe.",
-		shortDesc: "Summons Leech Seed.",
+	genesisboost: {
+		name: "Genesis Boost",
+		desc: "Raises this Pokemon's or ally's Attack and Defense by 2 stages. Fails unless it is the user's first turn on the field.",
+		shortDesc: "+2 Atk, +2 Def; First turn out only.",
 	},
 	berserkerblade: {
 		name: "Berserker Blade",
-		desc: "Has a 30% chance to burn the target and a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio. 10% chance to burn.",
+		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
+		shortDesc: "30% chance to burn the target. Thaws target.",
 	},
 	mudmaelstrom: {
 		name: "Mud Maelstrom",
-		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
-		shortDesc: "Traps and damages the target for 4-5 turns.",
-
-		start: "  [POKEMON] became trapped by swirling mud!",
+		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "100% chance lower adjacent Pkmn Speed by 1.",
 	},
 	finalhour: {
 		name: "Final Hour",
@@ -7478,7 +7476,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
 	},
 	slamburger: {
-		name: "Acupressure",
+		name: "Slamburger",
 		desc: "20% chance to lower a random stat by 2 stages of the target as long as the stat is not already at stage 6.",
 		shortDesc: "20% chance to a lower random stat of the target by 2.",
 	},

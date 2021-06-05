@@ -22373,52 +22373,62 @@ export const Moves: { [moveid: string]: MoveData } = {
 		target: "self",
 		type: "Rock",
 	},
-	starseedblast: {
-		availability: {atlas: 1},
-		accuracy: 95,
-		basePower: 75,
-		category: "Special",
-		name: "Starseed Blast",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, bullet: 1,},
-		onHit(target, source) {
-			if (target.hasType('Grass')) return null;
-			target.addVolatile('leechseed', source);
+	genesisboost: {
+		availability: {clover: 1},
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Genesis Boost",
+		pp: 5,
+		priority: 2,
+		flags: {},
+		onTry(source) {
+			if (source.activeMoveActions > 1) {
+				this.hint("Genesis Boost only works on your first turn out.");
+				return false;
+			}
 		},
 		secondary: null,
-		target: "normal",
+		boosts: {
+			atk: 2,
+			def: 2,
+		},
+		target: "adjacentAllyOrSelf",
 		type: "Fairy",
 	},
-	berserkerblade: {
+	brandingblade: {
 		availability: {clover: 1},
-		accuracy: 85,
-		basePower: 100,
+		accuracy: 100,
+		basePower: 80,
 		category: "Physical",
-		name: "Berserker Blade",
-		pp: 1,
+		name: "Branding Blade",
+		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, defrost: 1},
+		thawsTarget: true,
 		secondary: {
 			chance: 30,
 			status: 'brn',
 		},
-		critRatio: 2,
 		target: "normal",
 		type: "Steel",
 	},
 	mudmaelstrom: {
-		availability: {clover: 1,},
-		accuracy: 75,
-		basePower: 100,
+		availability: {clover: 1},
+		accuracy: 100,
+		basePower: 80,
 		category: "Special",
 		name: "Mud Maelstrom",
-		pp: 5,
+		pp: 15,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		volatileStatus: 'partiallytrapped',
-		secondary: null,
-		target: "normal",
+		flags: {protect: 1, mirror: 1, nonsky: 1},
+		secondary: {
+			chance: 100,
+			boosts: {
+				spe: -1,
+			},
+		},
+		target: "allAdjacentFoes",
 		type: "Ground",
 	},
 	finalhour: {
