@@ -7253,6 +7253,40 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "The user is protected from most attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
 		shortDesc: "Protects user this turn, +1 Defense.",
 	},
+	gazerbeam: {
+		name: "Gazer Beam",
+		desc: "Has a 10% chance to burn the target. This move's type effectiveness against Steel is changed to be super effective no matter what this move's type is.",
+		shortDesc: "10% chance to burn. Super effective on Steel.",
+	},
+	cloudbreaker: {
+		name: "Cloud Breaker",
+		shortDesc: "Clears the currently active weather.",
+	},
+	starseedblast: {
+		name: "Starseed Blast",
+		desc: "This move summons Leech Seed on the foe.",
+		shortDesc: "Summons Leech Seed.",
+	},
+	berserkerblade: {
+		name: "Berserker Blade",
+		desc: "Has a 30% chance to burn the target and a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio. 10% chance to burn.",
+	},
+	mudmaelstrom: {
+		name: "Mud Maelstrom",
+		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+		shortDesc: "Traps and damages the target for 4-5 turns.",
+
+		start: "  [POKEMON] became trapped by swirling mud!",
+	},
+	finalhour: {
+		name: "Final Hour",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Future Sight is already in effect for the target's position.",
+		shortDesc: "Hits two turns after being used.",
+
+		start: "  [POKEMON] chose Final Hour as its destiny!",
+		activate: "  [TARGET] took the Final Hour attack!",
+	},
 	/* :^) */
 	skullcannon: {
 		name: "Skull Cannon",
